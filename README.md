@@ -87,5 +87,7 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
       /etc/init.d/dropbear restart
       echo -e 'admin\nadmin' | passwd root
 
+- 再重复第三步 重启后自动开启SSH
+
 
 
