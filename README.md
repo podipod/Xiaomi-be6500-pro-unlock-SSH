@@ -36,9 +36,22 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
 - 重启后自动开启SSH
 
       mkdir /data/auto_ssh && cd /data/auto_ssh
-      curl -O https://cdn.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
+      curl -O https://fastly.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
       chmod +x auto_ssh.sh
-      ./auto_ssh.sh install
+    
+      uci set firewall.auto_ssh=include
+      uci set firewall.auto_ssh.type='script'
+      uci set firewall.auto_ssh.path='/data/auto_ssh/auto_ssh.sh'
+      uci set firewall.auto_ssh.enabled='1'
+      uci commit firewall
+
+- 修改时区设置
+
+      uci set system.@system[0].timezone='CST-8'
+      uci set system.@system[0].webtimezone='CST-8'
+      uci set system.@system[0].timezoneindex='2.84'
+      uci commit
+  
 
 ### 第四步：固化SSH
 - 用SSH工具登录路由器后分别执行以下指令，每次执行指令后路由器会重启。
