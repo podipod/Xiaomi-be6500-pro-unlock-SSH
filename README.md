@@ -2,6 +2,7 @@
 本教程一共分为两个视频，第一个是解锁SSH，第二个是安装ShellCrash科学上网。在小米原来的固件上安装科学上网软件，不影响路由器原有的功能，并且支持全屋科学上网。
 
 ## 小米路由器 BE6500 Pro 解锁SSH教程
+视频教程：▶ https://youtu.be/OqTVuJC-TIo
 
 ### 第一步：下载固件和SSH工具
 - 小米路由器 BE6500 Pro 固件 1.0.46 版本，<a href="https://github.com/eujc/lyq/releases/download/ROM/miwifi_rd08_firmware_076b5_1.0.46.bin" target="_blank">点击下载>></a>
@@ -88,4 +89,14 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
       uci commit firewall
 
 
+## 小米路由器 BE6500 Pro 安装 ShellCrash 科学上网教程
 
+**Clash安装源：**
+
+    export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+
+**备用安装源：**
+
+    export url='https://gh.jwsc.eu.org/master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+
+**Clash管理地址：** http://192.168.31.1:9999/ui/ (如果打不开请按Ctrl+F5 刷新)
