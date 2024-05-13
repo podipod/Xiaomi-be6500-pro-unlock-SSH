@@ -90,6 +90,7 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
 
 
 ## 小米路由器 BE6500 Pro 安装 ShellCrash 科学上网教程
+视频教程：▶ https://youtu.be/ES12KA1FN9A
 
 **Clash安装源：**
 
