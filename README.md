@@ -37,7 +37,7 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
 - 重启后自动开启SSH
 
       mkdir /data/auto_ssh && cd /data/auto_ssh
-      curl -O https://cdn.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
+      curl -O https://fastly.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
       chmod +x auto_ssh.sh
       ./auto_ssh.sh install
   
